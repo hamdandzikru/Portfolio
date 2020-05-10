@@ -1408,7 +1408,10 @@
                       </div>
                       <div class="desc">
                           <h2>Gmail</h2>
-                          <p>hamdanrobbi@gmail.com</p>
+                          <input type="text" value="hamdanrobbi@gmail.com" id="pilih" readonly />
+                          
+                          <button class="btn-flat" onclick="copy_text()">Copy Email</button>
+                          
                       </div>
                   </div><!-- /.featured-item -->
 
@@ -1424,12 +1427,13 @@
                   </div><!-- /.featured-item -->
 
                   <div class="featured-item border-box radius-4 hover brand-hover">
+                    <a href="https://api.whatsapp.com/send?phone=6282131630104&text=Halo%20saya%20ingin%20menanyakan%20...">
                       <div class="icon mb-30">
                           <i class="fa fa-whatsapp"></i>
                       </div>
                       <div class="desc">
                           <h2>Phone / Whatsapp</h2>
-                          <p>082131630104</p>
+                          <p><a href="https://api.whatsapp.com/send?phone=6282131630104&text=Halo%20saya%20ingin%20menanyakan%20...">082131630104</a></p></a>
                       </div>
                   </div><!-- /.featured-item -->
 
@@ -1557,6 +1561,14 @@
 
                 });
             });
+        </script>
+
+        <script type="text/javascript">
+    function copy_text() {
+        document.getElementById("pilih").select();
+        document.execCommand("copy");
+        alert("Text berhasil dicopy");
+        }
         </script>
 
         <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems! The following part can be removed on Server for On Demand Loading) -->
